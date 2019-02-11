@@ -4,9 +4,11 @@ export default class Footer extends Component {
   render() {
     return (
       <div>
-        <FilterLink filter="SHOW_ALL">All</FilterLink>
-        <FilterLink filter="ACTIVE">Active</FilterLink>
-        <FilterLink filter="COMPLETED">Completed</FilterLink>
+        <FilterLink filter="all">All</FilterLink>
+        {", "}
+        <FilterLink filter="active">Active</FilterLink>
+        {", "}
+        <FilterLink filter="completed">Completed</FilterLink>
       </div>
     );
   }
