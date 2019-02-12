@@ -1,14 +1,14 @@
 import React from "react";
 
-const Todo = ({ handleClick, completed, text }) => {
-  return (
-    <li
-      onClick={handleClick}
-      style={{ textDecoration: completed ? "line-through" : "none" }}
-    >
-      {text}
-    </li>
-  );
-};
+const Todo = ({ onClick, completed, text }) => (
+  <li
+    onClick={onClick}
+    style={{
+      textDecoration: completed ? "line-through" : "none"
+    }}
+  >
+    {text}
+  </li>
+);
 
 export default Todo;
