@@ -3,7 +3,7 @@ import AddTodo from "./AddTodo";
 import VisibleTodoList from "../containers/VisibleTodoList";
 import Footer from "./Footer";
 
-const App = () => {
+const App = ({ match }) => {
   return (
     <>
       <AddTodo />
