@@ -5,6 +5,7 @@
   "dependencies": {
     "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
+    "normalizr": "^3.3.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-redux": "^6.0.0",
@@ -14,6 +15,7 @@
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0",
     "sass-loader": "^7.1.0",
     "uuid": "^3.3.2"
   },
