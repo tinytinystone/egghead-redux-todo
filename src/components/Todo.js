@@ -1,11 +1,12 @@
 import React from "react";
+import "./Todo.scss";
 
 const Todo = ({ onClick, completed, text }) => (
   <li
     onClick={onClick}
-    style={{
-      textDecoration: completed ? "line-through" : "none"
-    }}
+    className={
+      completed ? "todo-list__item--completed" : "todo-list__item--active"
+    }
   >
     {text}
   </li>

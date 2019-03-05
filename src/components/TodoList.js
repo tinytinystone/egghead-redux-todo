@@ -1,8 +1,9 @@
 import React from "react";
 import Todo from "./Todo";
+import "./TodoList.scss";
 
 const TodoList = ({ todos, onTodoClick }) => (
-  <ul>
+  <ul className="todo-list">
     {todos.map(todo => (
       <Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)} />
     ))}

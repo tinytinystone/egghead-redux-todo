@@ -1,15 +1,16 @@
 import React, { Component } from "react";
-import FilterLink from "../containers/FilterLink";
+import FilterRadio from "../containers/FilterRadio";
+import "./Footer.scss";
+
 export default class Footer extends Component {
   render() {
     return (
-      <div>
-        <FilterLink filter="all">All</FilterLink>
-        {", "}
-        <FilterLink filter="active">Active</FilterLink>
-        {", "}
-        <FilterLink filter="completed">Completed</FilterLink>
-      </div>
+      <fieldset className="filters">
+        <legend className="filters__title">Show:</legend>
+        <FilterRadio filter="all">All</FilterRadio>
+        <FilterRadio filter="active">Active</FilterRadio>
+        <FilterRadio filter="completed">Completed</FilterRadio>
+      </fieldset>
     );
   }
 }

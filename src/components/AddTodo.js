@@ -1,6 +1,7 @@
 import React from "react";
 import { addTodo } from "../actions";
 import { connect } from "react-redux";
+import "./AddTodo.scss";
 
 const AddTodo = ({ addTodo }) => {
   return (
@@ -11,9 +12,15 @@ const AddTodo = ({ addTodo }) => {
         addTodo(body);
         e.target.elements.body.value = "";
       }}
+      className="add-todo"
     >
-      <input type="text" name="body" />
-      <button>Add Todo</button>
+      <input
+        type="text"
+        name="body"
+        className="add-todo__input"
+        placeholder="New Todo"
+      />
+      <button className="add-todo__button">Add Todo</button>
     </form>
   );
 };
