@@ -1,3 +1,5 @@
+@import "./common.scss";
+
 :root {
   font: 600 16px "Open Sans", sans-serif;
 }
@@ -14,5 +16,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  @include respond-to("medium") {
+    max-width: 720px;
+    justify-content: flex-end;
+  }
 }

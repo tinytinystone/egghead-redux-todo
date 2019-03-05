@@ -1,3 +1,5 @@
+@import "../common.scss";
+
 .filters {
   background: #2c3e50;
   color: #ecf0f1;
@@ -7,8 +9,13 @@
   height: 80px;
   box-sizing: border-box;
   padding: 32px 35px 0;
-  border-radius: 3px 3px 0 0;
+  border-radius: 0 0 3px 3px;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  order: -1;
+  @include respond-to("medium") {
+    border-radius: 3px 3px 0 0;
+    order: 0;
+  }
 }
 .filters__title {
   float: left;

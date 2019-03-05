@@ -1,3 +1,5 @@
+@import "../common.scss";
+
 [class^="todo-list__item"] {
   cursor: pointer;
   height: 80px;
@@ -7,10 +9,13 @@
   letter-spacing: 2px;
   box-sizing: border-box;
   padding: 27px 33px 0 78px;
-  box-shadow: 0 1px 0 0 #e6e6e6, 0 2px 0 0 white;
+  box-shadow: 0 -1px 0 0 white, 0 -2px 0 0 #e6e6e6;
   background-image: url("https://jsbin-user-assets.s3.amazonaws.com/GarthDB/box.svg");
   background-repeat: no-repeat;
   background-position: 28px 16px;
+  @include respond-to("medium") {
+    box-shadow: 0 1px 0 0 #e6e6e6, 0 2px 0 0 white;
+  }
 }
 .todo-list__item--completed {
   color: #16a085;
